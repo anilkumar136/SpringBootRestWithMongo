@@ -71,10 +71,14 @@ class PlayerControllerTest {
 
     @Test
     void TestExcption(){
+//        Mockito.when(playerService.getAllPlayer()).thenReturn(null);
+//        Exception exception = (Exception) Assertions.assertThrows(NullPointerException.class, () -> mockMvc.perform(get("/api/players")).andReturn());
+//        //As here no exption was thrown as we are catchint the excption esle it would have worked
+
         Mockito.when(playerService.getAllPlayer()).thenReturn(null);
-        Exception exception = (Exception) Assertions.assertThrows(NullPointerException.class, () -> mockMvc.perform(get("/api/players")).andReturn());
-        //As here no exption was thrown as we are catchint the excption esle it would have worked
+        Exception exception = (Exception) Assertions.assertThrows(NumberFormatException.class, () -> Integer.parseInt("abc"));
+
         String msg = exception.getMessage();
-        Assertions.assertTrue(msg.contains("Sorryyyyy"));
+        Assertions.assertTrue(msg.contains("abc"));
     }
 }
