@@ -1,12 +1,20 @@
+Phone screen- One leetcode
+Round 1 - Craft Exersise give for 90 mins----One Engineer was on call with scren sharing. Google was allowed and Engineer on call was juts to see if u need any help. No Questions asked 
+Round 2 - 3-4 ppl Discussion on Craft. Tech choices. Scnrios like what if load is doubled..  I mentioned Paging, cahcing, 
+Round 3 - 2 ppl ---Asked to add PUT/POST in craft. Oprtional Questions like montering/Alerting/logging frameworks etc
+Round 4 - System Design (for Staff--asked Google map desgin)....for senior could be a leetcode (ismorphic strings)
+Round 5 - Behviorla
+
+-----------------Craft Exersice---------
 Your assignment is to create a microservice which serves the contents of Player.csv through a REST API.
 
 The service should expose two REST endpoints:
 
     GET /api/players - returns the list of all players.
     GET /api/players/{playerID} - returns a single player by ID.
-
 -------------------------------------------
 (Attached player.csv as well here)
+This is how i started it------
 Tech:
 Application--
 Java--Springboot....Will expose Rest end points
