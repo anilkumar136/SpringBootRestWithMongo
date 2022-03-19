@@ -6,7 +6,7 @@ The service should expose two REST endpoints:
     GET /api/players/{playerID} - returns a single player by ID.
 
 -------------------------------------------
-
+(Attached player.csv as well here)
 Tech:
 Application--
 Java--Springboot....Will expose Rest end points
